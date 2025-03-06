@@ -1,0 +1,20 @@
+:root {
+    --darkBlue: #2A324B;
+    --lightBlue: #58699D;
+    --grey: #E1E5EE; 
+    --white: #fff;
+    --defFont: 'Montserrat', sans-serif;
+}
+
+article {
+    ul {
+        li {
+            color: var(--darkBlue);
+            
+            a {
+                color: var(--lightBlue);
+            }
+        }
+        
+    }
+}

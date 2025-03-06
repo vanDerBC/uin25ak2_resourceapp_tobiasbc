@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+:root {
+    --darkBlue: #2A324B;
+    --lightBlue: #58699D;
+    --grey: #E1E5EE; 
+    --white: #fff;
+    --defFont: 'Montserrat', sans-serif;
+}
+
+nav {
+
+    font-family: var(--defFont);
+
+    button {
+        background-color: var(--darkBlue);
+        border: none;
+        padding: 1rem 3.6rem;
+        
+        .selected {
+            background-color: var(--white);
+            color: var(--darkBlue);
+        }
+        
+        :hover {
+            background-color: var(--white);
+            color: var(--darkBlue);
+        }
+    }
+    
+
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        padding: 0;
+        margin-bottom: 0;
+
+        li {
+
+            a {
+                color: var(--white);
+                font-size: 1rem;
+                font-weight: bold;
+                font-family: var(--defFont);
+            }
+        }
+
+        
+    }
+}
