@@ -10,9 +10,12 @@ article {
 
     h1 {
         color: var(--darkBlue);
+        font-size: 30px;
     }
 
     p {
-        color: var(--darkBlue);
+        color: #000;
+        font-size: 15px;
+        font-weight: 450;
     }
 }
