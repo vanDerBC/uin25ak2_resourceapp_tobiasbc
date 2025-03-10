@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import resources from "../assets/javascript/ressurser";
 import "../assets/styles/nav.scss"
 
