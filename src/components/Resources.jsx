@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import resources from "../assets/javascript/ressurser";
 import "../assets/styles/resources.scss"
 
@@ -14,7 +14,8 @@ export default function Resources() {
           <ul>
             {resource.sources.map((source, idx) => (
               <li key={idx}>
-                <a href={source.url}>{source.title}</a>
+                {/** Henter url-en fra resources i en Link, og tittelen*/}
+                <Link to={source.url}>{source.title}</ Link>
               </li>
             ))}
           </ul>

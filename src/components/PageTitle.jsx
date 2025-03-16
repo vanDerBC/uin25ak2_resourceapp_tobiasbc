@@ -11,7 +11,9 @@ export default function PageTitle() {
     <>
       {filteredResources.map((resource, index) => (
         <article key={index}>
+          {/** Henter ut kategorien fra resources som soverskrift */}
           <h1>{resource.category}</h1>
+          {/** Henter ut texten fra resources */}
           <p>{resource.text}</p>
         </article>
       ))}

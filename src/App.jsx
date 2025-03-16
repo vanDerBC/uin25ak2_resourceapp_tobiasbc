@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import './App.css'
-import Layout from './components/Layout'
 import { Navigate, Route, Routes, useLocation, useNavigate } from 'react-router-dom'
+import Layout from './components/Layout'
 import Resources from './components/Resources'
 import PageTitle from './components/PageTitle'
 
@@ -11,15 +11,16 @@ function App() {
   const location = useLocation();
 
   useEffect(() => {
-    // Hvis pathen ikke er "/" (altså hvis den er en kategori-side), naviger til "/"
+    // Ser etter om siden er på en annen path enn "/", og sender brukeren til path "/" om den ikke er det, når siden lastes
     if (location.pathname !== "/") {
       navigate("/", { replace: true });
     }
-  }, []); // Tom array sikrer at dette kun skjer ved første render (f.eks. etter refresh)
+  }, []); 
 
   return (
     <Layout>
       <Routes>
+        {/** Når path er på "/" vil den automatisk bli navigert til "html" */}
         <Route path="/" element={<><PageTitle /><Resources /><Navigate to="/HTML" /></>} />
         <Route path=":category" element={<><PageTitle /><Resources /> </>} />
       </Routes>

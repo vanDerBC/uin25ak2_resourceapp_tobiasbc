@@ -25,11 +25,13 @@ nav {
                 padding: 1rem 3.6rem;
                 font-weight: bold;
 
+                // Endrer farge og skrift når pilen er over navigasjonen  
                 &:hover {
                     background-color: var(--white);
                     color: var(--darkBlue);
                 }
 
+                // Endrer farge og skrift når siden er aktiv
                 &.active {
                     background-color: var(--white);
                     color: var(--darkBlue);
